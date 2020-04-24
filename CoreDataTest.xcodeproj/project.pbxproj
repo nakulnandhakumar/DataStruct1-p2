@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		DA2A38292450ECF700A39B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A38282450ECF700A39B64 /* AppDelegate.swift */; };
 		DA2A382B2450ECF700A39B64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A382A2450ECF700A39B64 /* SceneDelegate.swift */; };
-		DA2A382D2450ECF700A39B64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A382C2450ECF700A39B64 /* ViewController.swift */; };
-		DA2A38302450ECF700A39B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2A382E2450ECF700A39B64 /* Main.storyboard */; };
+		DA2A382D2450ECF700A39B64 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A382C2450ECF700A39B64 /* CoreDataController.swift */; };
+		DA2A38302450ECF700A39B64 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2A382E2450ECF700A39B64 /* Login.storyboard */; };
 		DA2A38332450ECF700A39B64 /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2A38312450ECF700A39B64 /* CoreDataTest.xcdatamodeld */; };
 		DA2A38352450ECF800A39B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2A38342450ECF800A39B64 /* Assets.xcassets */; };
 		DA2A38382450ECF800A39B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2A38362450ECF800A39B64 /* LaunchScreen.storyboard */; };
 		DA2A38432450ECF800A39B64 /* CoreDataTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A38422450ECF800A39B64 /* CoreDataTestTests.swift */; };
 		DA2A384E2450ECF800A39B64 /* CoreDataTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A384D2450ECF800A39B64 /* CoreDataTestUITests.swift */; };
+		DA2A385C2450F8A300A39B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2A385B2450F8A300A39B64 /* Main.storyboard */; };
+		DA500729245286FA00016544 /* UsernamePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA500728245286FA00016544 /* UsernamePassword.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,8 @@
 		DA2A38252450ECF700A39B64 /* CoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2A38282450ECF700A39B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA2A382A2450ECF700A39B64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA2A382C2450ECF700A39B64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA2A382F2450ECF700A39B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA2A382C2450ECF700A39B64 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		DA2A382F2450ECF700A39B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		DA2A38322450ECF700A39B64 /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
 		DA2A38342450ECF800A39B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2A38372450ECF800A39B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		DA2A38492450ECF800A39B64 /* CoreDataTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2A384D2450ECF800A39B64 /* CoreDataTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestUITests.swift; sourceTree = "<group>"; };
 		DA2A384F2450ECF800A39B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2A385B2450F8A300A39B64 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DA500728245286FA00016544 /* UsernamePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsernamePassword.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +107,12 @@
 			children = (
 				DA2A38282450ECF700A39B64 /* AppDelegate.swift */,
 				DA2A382A2450ECF700A39B64 /* SceneDelegate.swift */,
-				DA2A382C2450ECF700A39B64 /* ViewController.swift */,
-				DA2A382E2450ECF700A39B64 /* Main.storyboard */,
-				DA2A38342450ECF800A39B64 /* Assets.xcassets */,
+				DA2A382C2450ECF700A39B64 /* CoreDataController.swift */,
 				DA2A38362450ECF800A39B64 /* LaunchScreen.storyboard */,
+				DA2A385B2450F8A300A39B64 /* Main.storyboard */,
+				DA500728245286FA00016544 /* UsernamePassword.storyboard */,
+				DA2A382E2450ECF700A39B64 /* Login.storyboard */,
+				DA2A38342450ECF800A39B64 /* Assets.xcassets */,
 				DA2A38392450ECF800A39B64 /* Info.plist */,
 				DA2A38312450ECF700A39B64 /* CoreDataTest.xcdatamodeld */,
 			);
@@ -235,9 +241,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA500729245286FA00016544 /* UsernamePassword.storyboard in Resources */,
 				DA2A38382450ECF800A39B64 /* LaunchScreen.storyboard in Resources */,
 				DA2A38352450ECF800A39B64 /* Assets.xcassets in Resources */,
-				DA2A38302450ECF700A39B64 /* Main.storyboard in Resources */,
+				DA2A38302450ECF700A39B64 /* Login.storyboard in Resources */,
+				DA2A385C2450F8A300A39B64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2A38332450ECF700A39B64 /* CoreDataTest.xcdatamodeld in Sources */,
-				DA2A382D2450ECF700A39B64 /* ViewController.swift in Sources */,
+				DA2A382D2450ECF700A39B64 /* CoreDataController.swift in Sources */,
 				DA2A38292450ECF700A39B64 /* AppDelegate.swift in Sources */,
 				DA2A382B2450ECF700A39B64 /* SceneDelegate.swift in Sources */,
 			);
@@ -301,12 +309,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA2A382E2450ECF700A39B64 /* Main.storyboard */ = {
+		DA2A382E2450ECF700A39B64 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA2A382F2450ECF700A39B64 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		DA2A38362450ECF800A39B64 /* LaunchScreen.storyboard */ = {
